@@ -9,12 +9,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-
+@RequestMapping("/series")
 public class SerieController {
     @Autowired
    private SerieService service;
 
-    @GetMapping("/series/frases")
+    @GetMapping("/frases")
     public SerieDTO obterfrase(){
         return service.obterfrase();
     }
