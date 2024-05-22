@@ -1,9 +1,9 @@
-package model;
+package br.com.alura.Screenmatchfrases.model;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="frases")
+@Table(name = "frases")
 public class Frase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
